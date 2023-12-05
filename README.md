@@ -2,7 +2,7 @@
 
 ---
 
-![Flappy Bird](Read.png)
+![Flappy Bird](/src/Read.png)
 
 ### Descripción
 
@@ -41,7 +41,7 @@ Si deseas contribuir al desarrollo del juego, sigue estos pasos:
 
 ---
 
-![Flappy Bird](Read.png)
+![Flappy Bird](/src/Read.png)
 
 ### Description
 
