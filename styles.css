@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden; /* Para ocultar barras de desplazamiento */
+}
+
+.background {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('src/background.jpg');
+  background-size: cover;
+  position: absolute;
+}
+
+.bird {
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  top: 50vh;
+  left: 30vw;
+  background-image: url('src/bird.png');
+  z-index: 100;
+}
+
+.pipe_sprite {
+  position: fixed;
+  height: 70vh;
+  width: 6vw;
+  background-image: url('src/pipe.png');
+  background-size: cover;
+}
+
+.message {
+  position: fixed;
+  z-index: 10;
+  height: 10vh;
+  font-size: 2rem;
+  font-weight: 100;
+  color: black;
+  top: 30vh;
+  left: 20vw;
+  text-align: center;
+}
+
+.score-container {
+  position: fixed;
+  z-index: 10;
+  height: 10vh;
+  font-size: 2rem;
+  font-weight: 100;
+  color: goldenrod;
+  top: 0;
+  left: 50vw;
+  transform: translateX(-50%); 
+}
+
+
+.score {
+  position: fixed;
+  z-index: 10;
+  height: 10vh;
+  font-size: 2rem;
+  font-weight: 100;
+  color: black;
+  top: 0;
+  left: 0;
+  background-color: white; 
+  padding: 10px; 
+  font-family: 'RetroFont', sans-serif; 
+  border: 1px solid black; 
+  border-radius: 5px; 
+}
+
+.score_title {
+  color: black; 
+}
+
+.score_val {
+  color: black; 
+}
