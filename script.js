@@ -12,7 +12,7 @@ window.onload = function () {
 
     bird = document.querySelector('.bird');
     birdProps = bird.getBoundingClientRect();
-    background = document.querySelector('.background').getBoundingClientRect();
+    background = document.querySelector('.background');
     scoreVal = document.querySelector('.score_val');
     gameState = 'Start';
 
@@ -64,6 +64,9 @@ function play() {
             }
         });
 
+        // Mover el fondo junto con el pájaro
+        background.style.backgroundPositionX = parseInt(background.style.backgroundPositionX || 0) - moveSpeed + 'px';
+
         requestAnimationFrame(move);
     }
 
@@ -79,7 +82,7 @@ function play() {
             }
         });
 
-        if (birdProps.top <= 0 || birdProps.bottom >= background.bottom) {
+        if (birdProps.top <= 0 || birdProps.bottom >= window.innerHeight) {
             gameState = 'End';
             alert(`Game Over! Your Score: ${scoreVal.innerHTML}. Press Enter To Restart`);
             location.reload();
