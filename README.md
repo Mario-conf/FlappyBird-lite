@@ -1,4 +1,4 @@
-## Flappy Bird Lite
+## Flappy Bird lite
 
 ---
 
@@ -37,7 +37,7 @@ Si deseas contribuir al desarrollo del juego, sigue estos pasos:
 
 ---
 
-## Flappy Bird Lite
+## Flappy Bird lite
 
 ---
 
